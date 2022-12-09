@@ -1,5 +1,5 @@
 import assert from 'assert';
-import fs from 'fs';
+import * as fs from 'fs';
 
 export class FileChunker {
   constructor({ filePath, chunkSize }) {
