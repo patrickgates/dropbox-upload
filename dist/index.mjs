@@ -11918,7 +11918,7 @@ async function uploadStream(filePath, dropboxFilePath) {
   }
 
   core.info('upload stream finished')
-  core.info(response)
+  core.info(JSON.stringify(response))
   return response
 }
 
