@@ -1,0 +1,9 @@
+{
+  "name": "dropbox-upload",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "license": "MIT",
+  "dependencies": {
+    "dropbox": "^10.34.0"
+  }
+}

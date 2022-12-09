@@ -1,0 +1,24 @@
+name: "Dropbox Upload"
+description: "Upload files to Dropbox"
+author: "patrickgates"
+branding:
+  icon: upload-cloud
+  color: pink
+inputs:
+  dropbox_access_token:
+    required: true
+    description: "Dropbox access token"
+  src:
+    required: true
+    description: "File to upload to Dropbox. e.g. 'file.txt', '**/*.txt'"
+  dest:
+    required: false
+    default: "/"
+    description: "Destination path for upload. e.g. '/file.txt', '/dest/'"
+  mode:
+    required: false
+    default: "add"
+    description: "What to do if the file already exists [add, overwrite]. default: add"
+runs:
+  using: "node16"
+  main: "index.mjs"
