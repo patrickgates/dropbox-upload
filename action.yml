@@ -21,4 +21,4 @@ inputs:
     description: "What to do if the file already exists [add, overwrite]. default: add"
 runs:
   using: "node16"
-  main: "dist/main.js"
+  main: "dist/index.mjs"
